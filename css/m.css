@@ -164,6 +164,7 @@
     }
     .sub-menu-box{
         height: 600px;
+        display: none;
     }
     .sub-menu-box .none-box{
         height: 60px;

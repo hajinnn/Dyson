@@ -1428,7 +1428,7 @@ header .header-wrap .header-txt li a.active{
     box-sizing: border-box;
 }
 .sec-7 .sec-7-wrap .left{
-    width: 302px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     color: #fff;
@@ -1439,7 +1439,7 @@ header .header-wrap .header-txt li a.active{
     height: 51.79px;
 }
 .sec-7 .sec-7-wrap .left h3{
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .sec-7 .sec-7-wrap .right{
@@ -1457,7 +1457,7 @@ header .header-wrap .header-txt li a.active{
     align-items: center;
 }
 .sec-7 .sec-7-wrap .right .call{
-    width: 242px;
+    width: 202px;
 }
 .sec-7 .sec-7-wrap .right .mail{
     width: 163.2px;
@@ -1528,9 +1528,15 @@ header .header-wrap .header-txt li a.active{
     height: 20px;
 }
 .sec-8 .sec-8-wrap .sec-8-top .left .sns-box{
-    width: 625.02px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
+}
+.sec-8 .sec-8-wrap .sec-8-top .left .sns-box a{
+    width: 40px;
+}
+.sec-8 .sec-8-wrap .sec-8-top .left .sns-box a svg{
+    width: 40px;
 }
 .sec-8 .sec-8-wrap .sec-8-top .left .sns-box a:hover svg{
     opacity: 0.6;

@@ -46,43 +46,124 @@ $(document).ready(function(){
 
 
 
+
+
 // 햄버거박스 메뉴 슬라이드 부분
 
-$(".menu-top >a").click(function(){
-  var submenu = $(this).next(".menu-top ul");
-if( submenu.is(":visible") ){
-  submenu.slideUp();
-  // $('.hbg-box li .top-menu svg').removeClass('active');
-}
-else{
-  submenu.slideDown();
-  // $('.hbg-box li .top-menu svg').addClass('active');
-}
+// $(".menu-top >a").click(function(){
+//   var submenu = $(this).next(".menu-top ul");
+// if( submenu.is(":visible") ){
+//   submenu.slideUp();
   
-});
+// }
+// else{
+//   submenu.slideDown();
+// }
+  
+// });
+
+
+// $('.hbg-box li').click(function(){
+//   $(this).children('.hbg-box .sub-menu').stop().slideDown();
+
+// });
+// $('.hbg-box li').mouseleave(function(){
+//   $(this).children('.hbg-box .sub-menu').stop().slideUp();
+
+// });
+
+
+// $('.hbg-box li .top-menu').click(function(){
+//   $(this).children('.hbg-box li .top-menu svg').addClass('active');
+
+// });
+// $('.hbg-box li .top-menu').mouseleave(function(){
+//   $(this).children('.hbg-box .sub-menu').stop().slideUp();
+//   $(this).children('.hbg-box li .top-menu svg').removeClass('active');
+
+// });
 
 
 
-
-
-$('.hbg-box li').click(function(){
-  $(this).children('.hbg-box .sub-menu').stop().slideDown();
-  // $('.hbg-box li .top-menu svg').toggleClass('active');
-
-});
-$('.hbg-box li').mouseleave(function(){
-  $(this).children('.hbg-box .sub-menu').stop().slideUp();
-  // $('.hbg-box li .top-menu svg').removeClass('active');
-
-});
-
-
-$('.hbg-box li > a').click(function(){
-  $(this).addClass('active');
-  $(this).siblings().removeClass('active');
+// $('.hbg-box li > a').click(function(){
+//   $(this).addClass('active');
+//   $(this).siblings().removeClass('active');
   
 
+// });
+// $(".hbg-box li").click(function(){
+//   var submenu = $('.hbg-box li .top-menu svg');
+// if( submenu.is(":visible") ){
+//   submenu.slideUp();
+//   $('.hbg-box li .top-menu svg').removeClass('active');
+// }
+// else{
+//   submenu.slideDown();
+//   $('.hbg-box li .top-menu svg').addClass('active');
+// }
+  
+// });
+
+
+// (pc방 기민)
+// $('.top-menu').click(function(){
+  
+//   $(this).children('.hbg-box li .top-menu svg').addClass('active');
+//   $('.menu-top .sub-menu').stop().slideUp();
+//   $(this).siblings().slideDown();
+  
+// });
+
+$('.hbg-box .menu-top').click(function(){
+
+  $(this).siblings().find('.top-menu svg').removeClass('active');
+  $(this).siblings().children('.sub-menu').slideUp();
+  $(this).find('.top-menu svg').toggleClass('active');
+  $(this).children('.sub-menu').slideToggle();
+
+  // if($(this).find('.top-menu svg').hasClass('active')) {
+
+  //   $(this).find('.top-menu svg').removeClass('active');
+
+  // } else {
+
+      
+
+  // }
+
 });
+
+// $('.hbg-box li .top-menu').click(function(){
+
+
+//   $(this).siblings('.sub-menu').stop().slideUp();
+
+
+
+
+// });
+
+
+
+// $('.top-menu').click(function(){
+
+//   $(this).children('.hbg-box li .top-menu svg').toggleClass('active');
+
+//   if($(this).hasClass("active") === false) {
+
+//     $(this).children('.hbg-box li .top-menu svg').addClass('active');
+//     $(this).siblings().slideToggle();
+    
+//   } else {
+  
+//     $(this).children('.hbg-box li .top-menu svg').removeClass('active');
+//     $(this).siblings().slideToggle();
+
+//   }
+  
+// });
+
+
 
 
 
