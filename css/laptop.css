@@ -1,10 +1,74 @@
 @charset "utf-8";
+/* 윈도우 크기가 1560px 이하 ~ 1200 px 이상일때 -> 최대(max-width) 1560px    최소(min-width)1200px */
+@media all and (max-width:1800px) and (min-width:1200px){
+    .sec-6{
+        padding: 350px 86px;
+        box-sizing: border-box;
+        align-items: flex-start;
+        height: 100%;
+    }
+    .sec-6 .sec-6-wrap{
+        flex-direction: column;
+        /* height: 100%; */
+        height: 900px;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .sec-6 .sec-6-wrap .sec-6-dyson-logo{
+        display: block;
+        position: absolute;
+        width: 500px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50% ,50%);
+        opacity: 0.05;
+    }
+    .sec-6 .sec-6-wrap .box-wrap{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* justify-content: space-between; */
+        height: 304px;
+    }
+    .sec-6 .sec-6-wrap .box-wrap:first-child{
+        margin-right: 0;
+        
+    }
+    .sec-6 .sec-6-wrap .box-wrap .box{
+        width: 500px;
+        /* height: 249px; */
+        margin-right: 0;
+    }
+    /* .sec-6 .sec-6-wrap .box-wrap .box:first-child{
+        margin-right: 50px;
+    } */
+    .sec-6 .sec-6-wrap .box-wrap .box img{
+        width: 500px;
+        height: 304px;
 
-/* 윈도우 크기가 1190px 이하 ~ 960 px 이상일때 -> 최대(max-width) 1199px    최소(min-width) 960px */
+    }
+
+    .sec-6 .sec-6-wrap .box a .box-item{
+        width: 500px;
+        height: 304px;
+    }
+
+
+
+}
+/* 윈도우 크기가 1199px 이하 ~ 960 px 이상일때 -> 최대(max-width) 1199px    최소(min-width) 960px */
 
 @media all and (max-width:1199px) and (min-width:960px){
-
-
+    
+    .sec-6 .sec-6-wrap .sec-6-dyson-logo{
+        display: block;
+        position: absolute;
+        width: 300px;
+        opacity: 0.1;
+        top: -100px;
+        right: 0;
+    }
 
     header .header-wrap .header-txt{
         width: 300px;
@@ -352,14 +416,15 @@
     }
 
     .sec-6{
-        height: 1700px;
+        /* height: 1500px; */
         flex-direction: column;
     }
     .sec-6 .sec-6-wrap{
         flex-direction: column;
-        height: 1700px;
+        height: 700px;
         padding: 100px 0 100px 0;
         align-items: center;
+        position: relative;
     }
 
     .sec-7 .sec-7-wrap{
@@ -406,9 +471,10 @@
     }
     .sec-8 .sec-8-wrap .sec-8-top .left{
         width: 500px;
+        margin-right: 50px;
     }
     .sec-8 .sec-8-wrap .sec-8-top .left .sns-box{
-        width: 300px;
+        width: 100%;
     }
     .sec-8 .sec-8-wrap .sec-8-top .left .sns-box svg{
         width: 40px;

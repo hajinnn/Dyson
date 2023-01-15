@@ -8,111 +8,8 @@ $(document).ready(function(){
   $('header .hamberger').click(function(){
     $('header .hamberger span').toggleClass('active');
     
-    $('.hbg-box').toggleClass('active');
-    
-    
+    $('.hbg-box').toggleClass('active'); 
 });
-  
-// $('.hbg-box li').mouseenter(function(){
-//   $(this).children('.hbg-box .sub-menu').stop().slideDown();
-//   $('.hbg-box li .top-menu svg').addClass('active');
-
-// });
-// $('.hbg-box li').mouseleave(function(){
-//   $(this).children('.hbg-box .sub-menu').stop().slideUp();
-//   $('.hbg-box li .top-menu svg').removeClass('active');
-
-// });
-
-
-
-
-// 클릭했을때의 기능은 남겨두고 마우스가 오버되면 메뉴가 자동으로 펼쳐지게
-// $(".menu-top >a").click(function(){
-//   var submenu = $(this).next(".menu-top ul");
-
-// if( submenu.is(":visible") ){submenu.slideUp();
-// }
-// else{submenu.slideDown();
-// }
-// }).mouseover(function(){
-//   $(this).next(".menu-top ul").stop().slideDown();
-// });
-
-// $(".menu-top:eq(1)>a").click();
-
-
-
-
-
-
-
-
-// 햄버거박스 메뉴 슬라이드 부분
-
-// $(".menu-top >a").click(function(){
-//   var submenu = $(this).next(".menu-top ul");
-// if( submenu.is(":visible") ){
-//   submenu.slideUp();
-  
-// }
-// else{
-//   submenu.slideDown();
-// }
-  
-// });
-
-
-// $('.hbg-box li').click(function(){
-//   $(this).children('.hbg-box .sub-menu').stop().slideDown();
-
-// });
-// $('.hbg-box li').mouseleave(function(){
-//   $(this).children('.hbg-box .sub-menu').stop().slideUp();
-
-// });
-
-
-// $('.hbg-box li .top-menu').click(function(){
-//   $(this).children('.hbg-box li .top-menu svg').addClass('active');
-
-// });
-// $('.hbg-box li .top-menu').mouseleave(function(){
-//   $(this).children('.hbg-box .sub-menu').stop().slideUp();
-//   $(this).children('.hbg-box li .top-menu svg').removeClass('active');
-
-// });
-
-
-
-// $('.hbg-box li > a').click(function(){
-//   $(this).addClass('active');
-//   $(this).siblings().removeClass('active');
-  
-
-// });
-// $(".hbg-box li").click(function(){
-//   var submenu = $('.hbg-box li .top-menu svg');
-// if( submenu.is(":visible") ){
-//   submenu.slideUp();
-//   $('.hbg-box li .top-menu svg').removeClass('active');
-// }
-// else{
-//   submenu.slideDown();
-//   $('.hbg-box li .top-menu svg').addClass('active');
-// }
-  
-// });
-
-
-// (pc방 기민)
-// $('.top-menu').click(function(){
-  
-//   $(this).children('.hbg-box li .top-menu svg').addClass('active');
-//   $('.menu-top .sub-menu').stop().slideUp();
-//   $(this).siblings().slideDown();
-  
-// });
 
 $('.hbg-box .menu-top').click(function(){
 
@@ -121,54 +18,9 @@ $('.hbg-box .menu-top').click(function(){
   $(this).find('.top-menu svg').toggleClass('active');
   $(this).children('.sub-menu').slideToggle();
 
-  // if($(this).find('.top-menu svg').hasClass('active')) {
-
-  //   $(this).find('.top-menu svg').removeClass('active');
-
-  // } else {
-
-      
-
-  // }
-
 });
 
-// $('.hbg-box li .top-menu').click(function(){
-
-
-//   $(this).siblings('.sub-menu').stop().slideUp();
-
-
-
-
-// });
-
-
-
-// $('.top-menu').click(function(){
-
-//   $(this).children('.hbg-box li .top-menu svg').toggleClass('active');
-
-//   if($(this).hasClass("active") === false) {
-
-//     $(this).children('.hbg-box li .top-menu svg').addClass('active');
-//     $(this).siblings().slideToggle();
-    
-//   } else {
-  
-//     $(this).children('.hbg-box li .top-menu svg').removeClass('active');
-//     $(this).siblings().slideToggle();
-
-//   }
-  
-// });
-
-
-
-
-
-
-
+  //sec-1 swiper
   var swiper = new Swiper(".mySwiper1", {
       effect: "fade",
       loop: true,
@@ -246,9 +98,6 @@ $('.hbg-box .menu-top').click(function(){
               },
     });
 
-  
-
-   
 
 
    // 헤더 스크롤 이벤트
@@ -266,13 +115,11 @@ $('.hbg-box .menu-top').click(function(){
 
    $('.slide-view .btn-right').click(function(){
       $('.slide-view .slide-wrap').animate({
-          // 애니메이트는 트렌지션 안걸어도 자연스럽게 넘어감
         left: -362
       },function(){
           $('.slide-view .slide-wrap').css({
               left: 0
           }).find('.img-box').first().appendTo('.slide-view .slide-wrap');
-          // find 를 사용하는 이유는 하위요소의 이미지를 찾는것
           
       });
   });
@@ -313,7 +160,7 @@ $('.sub-menu-box').mouseleave(function(){
   });
 
   btn.on('click',function(e){
-    // $('.top-btn').click(function()); 이랑 위에랑 똑같음 다르게 작성해본것
+
     e.preventDefault();
     $('html,body').animate({
         scrollTop: 0
@@ -328,9 +175,6 @@ $('.sub-menu-box').mouseleave(function(){
   $('.sec-6 .sec-6-wrap .box a .box-item').mouseleave(function(){
     $(this).removeClass('active');
   });
-
-
-
 
 
 
