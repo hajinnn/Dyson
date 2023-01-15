@@ -29,12 +29,8 @@ a{
     /* 가로스크롤 없애기 */
 }
 
-.sec-6 .sec-6-wrap .sec-6-dyson-logo{
-    display: none;
-}
-.sec-6 .sec-6-wrap .box-wrap{
-    margin-right: 20px;
-}
+
+
 
 .top-btn{
     position: fixed;
@@ -1359,7 +1355,7 @@ header .header-wrap .header-txt li a.active{
     justify-content: center;
     align-items: center;
     background-color: #000;
-    padding: 150px 86px;
+    padding: 150px 0;
     box-sizing: border-box;
 }
 .sec-6 .sec-6-wrap{
@@ -1372,8 +1368,10 @@ header .header-wrap .header-txt li a.active{
 }
 .sec-6 .sec-6-wrap .box-wrap{
     display: flex;
+    margin-right: 20px;
+}
+.sec-6 .sec-6-wrap .box-wrap:last-child{
     margin-right: 0;
-    
 }
 .sec-6 .sec-6-wrap .box-wrap:first-child{
     margin-right: 20px;
@@ -1429,6 +1427,10 @@ header .header-wrap .header-txt li a.active{
     width: 12px;
     margin-left: 8px;
 }
+.sec-6 .sec-6-wrap .sec-6-dyson-logo{
+    display: none;
+}
+
 
 /* 섹션7 영역 */
 .sec-7{
