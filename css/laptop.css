@@ -30,6 +30,7 @@
         justify-content: space-between;
         /* justify-content: space-between; */
         height: 304px;
+        margin-right: 0;
     }
     .sec-6 .sec-6-wrap .box-wrap:first-child{
         margin-right: 0;
@@ -46,12 +47,14 @@
     .sec-6 .sec-6-wrap .box-wrap .box img{
         width: 500px;
         height: 304px;
+        border-radius: 20px;
 
     }
 
     .sec-6 .sec-6-wrap .box a .box-item{
         width: 500px;
         height: 304px;
+        border-radius: 20px;
     }
 
 
@@ -60,7 +63,9 @@
 /* 윈도우 크기가 1199px 이하 ~ 960 px 이상일때 -> 최대(max-width) 1199px    최소(min-width) 960px */
 
 @media all and (max-width:1199px) and (min-width:960px){
-    
+    .sec-6 .sec-6-wrap .box-wrap{
+        margin-right: 0;
+    }
     .sec-6 .sec-6-wrap .sec-6-dyson-logo{
         display: block;
         position: absolute;
