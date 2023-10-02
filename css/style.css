@@ -841,7 +841,7 @@ header .header-wrap .header-txt li a.active{
 /* 섹션 3 영역 */
 .sec-3{
     width: 100%;
-    height: 1235PX;
+    height: 1235px;
     background-color: #000;
     padding: 0 60px 0 60px;
     box-sizing: border-box;
@@ -858,36 +858,20 @@ header .header-wrap .header-txt li a.active{
     max-width: 1838px;
 }
 .sec-3 .sec-3-wrap .mask{
-    width: 1054PX;
-    height: 495PX;
+    width: 1054px;
+    height: 495px;
+    /* width: 100%;
+    height: 100%; */
     /* border-top-left-radius: 300px; */
     /* border-top-right-radius: 300px; */
     overflow: hidden;
 }
 
-/* .sec-3 .sec-3-wrap .mask .swiper-wrapper .swiper-slide:nth-child(1){
-    width: 100%;
-    background: url(../img/con-3/img1.jpg) no-repeat center;
-    background-size: cover;
-}
-.sec-3 .sec-3-wrap .mask .swiper-wrapper .swiper-slide:nth-child(2){
-    width: 100%;
-    background: url(../img/con-3/img2.jpg) no-repeat center;
-    background-size: cover;
-}
-.sec-3 .sec-3-wrap .mask .swiper-wrapper .swiper-slide:nth-child(3){
-    width: 100%;
-    background: url(../img/con-3/img3.jpg) no-repeat center;
-    background-size: cover;
-}
-.sec-3 .sec-3-wrap .mask .swiper-wrapper .swiper-slide:nth-child(4){
-    width: 100%;
-    background: url(../img/con-3/img4.jpg) no-repeat center;
-    background-size: cover;
-} */
+
 .sec-3 .sec-3-wrap .mask .swiper-wrapper .swiper-slide img{
-    width: 1054px;
-    height: 495px;
+    width: 100%;
+    /* height: 495px; */
+
 }
 .sec-3 .sec-3-wrap .ceo-txt{
     display: flex;
